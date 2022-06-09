@@ -73,7 +73,7 @@
 
 .footer {
     grid-area: footer;
-    background-color: black;
+    background-image: linear-gradient(90deg, rgba(0,0,0) 0%, rgb(40, 40, 40) 50%, rgba(0,0,0) 100%);
 }
 
 .textoFooter {
@@ -147,7 +147,7 @@
 .listaTorneos {
     grid-area: listaTorneos;
     display: flex;
-    background-color: #182c50;
+    background-image: linear-gradient(90deg, rgba(6, 16, 36, 1) 0%, rgba(24, 44, 80, 1) 25%, rgba(24, 44, 80, 1) 50%, rgba(24, 44, 80, 1) 75%, rgba(6, 16, 36, 1) 100%);
     flex-direction: column;
     align-items: center;
     color: white;
@@ -242,7 +242,7 @@
 }
 
 .tituloTorneos {
-    background-color: black;
+    background-image: linear-gradient(90deg, rgba(0,0,0) 0%, rgb(40, 40, 40) 50%, rgba(0,0,0) 100%);
     padding: 2rem 0 2rem 0;
     color: white;
     width: 100%;
@@ -266,7 +266,7 @@
 }
 
 .tituloIntegrantes {
-    background-color: black;
+    background-image: linear-gradient(90deg, rgba(0,0,0) 0%, rgb(40, 40, 40) 50%, rgba(0,0,0) 100%);
     color: white;
     padding: 1rem;
 }
@@ -289,7 +289,7 @@
 .tituloForm {
     padding: 1.5rem;
     color: white;
-    background-color: black;
+    background-image: linear-gradient(90deg, rgba(0,0,0) 0%, rgb(40, 40, 40) 50%, rgba(0,0,0) 100%);
 }
 
 .form {
