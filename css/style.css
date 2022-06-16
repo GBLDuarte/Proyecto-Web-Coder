@@ -38,6 +38,7 @@
     font-size: 1.5rem;
     align-items: center;
     list-style: none;
+    margin: 0;
 }
 
 .palabraNav {
@@ -246,6 +247,7 @@
     padding: 2rem 0 2rem 0;
     color: white;
     width: 100%;
+    text-transform: uppercase;
 }
 
 .torneos {
@@ -290,6 +292,8 @@
     padding: 1.5rem;
     color: white;
     background-image: linear-gradient(90deg, rgba(0,0,0) 0%, rgb(40, 40, 40) 50%, rgba(0,0,0) 100%);
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .form {
@@ -299,6 +303,7 @@
 
 .form p {
     padding: 10px;
+    margin: 0;
 }
 
 .form input {
@@ -310,8 +315,13 @@
     width: 150px;
 }
 
-
-
+.container-fluid h2 {
+    background-image: linear-gradient(90deg, rgba(0,0,0) 0%, rgb(40, 40, 40) 50%, rgba(0,0,0) 100%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 
 
