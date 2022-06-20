@@ -110,14 +110,10 @@
 
 .primeraParte {
     grid-area: primeraParte;
-    display: flex;
-    justify-content: center;
-    padding: 4rem;
-    align-items: center;
+    padding: 3rem;
 }
 
 .textoPrimera {
-    max-width: 450px;
     padding: 1.5rem;
     text-align: center;
     font-family: 'Heebo', sans-serif;
@@ -130,17 +126,6 @@
 
 .tituloPrimera {
     padding-bottom: 1rem;
-}
-
-.imagenPrimera {
-    margin-left: 1.5rem;
-    text-align: center;
-    font-family: 'Heebo', sans-serif;
-    font-weight: bold;
-}
-
-.imagenPrimera img {
-    width: 400px;
 }
 
 /* CAROUSEL */
@@ -366,30 +351,19 @@
 
     /* main index */
 
-    .primeraParte {
-        flex-direction: column;
-        padding: 2rem 0 2rem 0;
-    }
-
     .textoPrimera {
         font-size: 20px;
         padding: 0;
-        max-width: 300px;
-    }
-
-    .imagenPrimera {
-        margin: 0;
-        padding-top: 2rem;
-    }
-
-    .imagenPrimera img {
-        width: 370px;
     }
 
     .listaTorneos {
         padding: 2rem 0 2rem 0;
     }
 
+    .listaTorneos ul {
+        margin: 0;
+        padding: 0;
+    }
 
     /* footer */
 
