@@ -15,6 +15,9 @@
     <link rel="shortcut icon" href="./img/favicon.png">
     <!-- Vinculo animacion css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- Vinculo CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <title>RLL Esports</title>
@@ -25,8 +28,7 @@
         <!-- Encabezado -->
         <header class="header">
             <nav>
-                <ul class="menuNav">
-
+                <ul class="menuNav m-0 p-0">
                     <li class="palabraNav">
                         <a href="./nosotros.html">NOSOTROS</a>
                     </li>
@@ -44,7 +46,7 @@
                         <a href="./contacto.html">CONTACTO</a>
                     </li>
                 </ul>
-                <ul class="menuNav2">
+                <ul class="menuNav2 p-0">
                     <li>
                         <a href="./nosotros.html">NOSOTROS</a>
                     </li>
@@ -65,12 +67,14 @@
             <div class="textoPrimera">
                 <h2 class="tituloPrimera wow animate__animated animate__flash">RESUMEN</h2>
                 <p>
-                    <span class="textoResaltado wow animate__animated animate__flash">Organización de esports</span> encargada al entretenimiento y a los
+                    <span class="textoResaltado wow animate__animated animate__flash">Organización de esports</span>
+                    encargada al entretenimiento y a los
                     deportes electronicos, realizando
                     eventos y torneos de caracter en linea como tambien presencial. Contamos con 5 presenciales
                     profesionales de Rocket League en la Republica Argentina, mas de 250 torneos realizados y mas de
                     3000 USD entregados en premios monetarios. <br>
-                    <br><span class="textoResaltado wow animate__animated animate__flash">Nuestro objetivo</span> es impulsar la escena nacional como
+                    <br><span class="textoResaltado wow animate__animated animate__flash">Nuestro objetivo</span> es
+                    impulsar la escena nacional como
                     tambien
                     regional ademas de los equipos
                     amateurs, semiprofesionales y profesionales brindandoles las
@@ -82,7 +86,29 @@
                 <p>Evento Gamergy</p>
             </div>
         </section>
-
+        <section id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/slider1 (1).jpg" class="d-block w-100" alt="fotos gamergy">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slider2 (1).jpg" class="d-block w-100" alt="fotos gamergy">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slider3 (1).jpg" class="d-block w-100" alt="fotos gamergy">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
         <section class="listaTorneos">
             <h2 class="tituloLista">Algunos de nuestros torneos</h2>
             <ul>
@@ -98,7 +124,7 @@
         <footer class="footer">
             <div class="textoFooter">
                 <div class="listaFooter">
-                    <ul>
+                    <ul class="m-0 p-0">
                         <li><a href="https://www.facebook.com/RLLesports/" target="_blank"><i
                                     class="fa-brands fa-facebook-f"></i></a></li>
                         <li><a href="https://www.instagram.com/rllesports/" target="_blank"><i
@@ -110,7 +136,7 @@
                     </ul>
                 </div>
                 <div class="textoCopy">
-                    <p>
+                    <p class="m-0">
                         Copyright © 2022 RLL Esports. Todos los derechos reservados - Hecho por Gabriel Duarte.
                     </p>
                 </div>
@@ -120,8 +146,11 @@
 
     <script src="js/wow.js"></script>
     <script>
-    new WOW().init();
+        new WOW().init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -17,6 +17,7 @@
         "header header header header"
         ". primeraParte primeraParte ."
         ". primeraParte primeraParte ."
+        "carousel carousel carousel carousel"
         "listaTorneos listaTorneos listaTorneos listaTorneos"
         "footer footer footer footer";
 }
@@ -140,6 +141,12 @@
 
 .imagenPrimera img {
     width: 400px;
+}
+
+/* CAROUSEL */
+
+.carousel {
+    grid-area: carousel;
 }
 
 /* LISTA TORNEOS (INDEX) */
@@ -330,6 +337,7 @@
         grid-template-areas:
             "header"
             "primeraParte"
+            "carousel"
             "listaTorneos"
             "footer";
     }
