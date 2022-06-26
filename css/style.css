@@ -39,6 +39,10 @@
     --bs-nav-link-hover-color: #0b94d4
 }
 
+.navbar-toggler {
+    background-color: #0b94d4;
+}
+
 .nav-item {
     padding: 20px;
 }
@@ -49,6 +53,7 @@
 }
 
 .nav-link:hover {
+    transition: .5s;
     transform: scale(1.5);
 }
 
@@ -83,6 +88,7 @@
 .textoFooter i:hover {
     transform: scale(2);
     color: #0b94d4;
+    transition: .3s;
 }
 
 .textoCopy {
@@ -189,7 +195,7 @@
     background-image: linear-gradient(90deg, rgba(0, 0, 0) 0%, rgb(40, 40, 40) 50%, rgba(0, 0, 0) 100%);
     color: white;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     font-family: 'Heebo', sans-serif;
 }
 
@@ -222,7 +228,7 @@
 
 .tituloTorneos {
     background-image: linear-gradient(90deg, rgba(0, 0, 0) 0%, rgb(40, 40, 40) 50%, rgba(0, 0, 0) 100%);
-    padding: 2rem 0 2rem 0;
+    padding: 1rem;
     color: white;
     width: 100%;
 }
@@ -259,40 +265,82 @@
     list-style: none;
 }
 
+/* ACORDION */
+
+.accordion {
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+.accordion-item {
+    background-color: rgb(192, 192, 192);
+}
+
+.accordion-item .accordion-button {
+    background-image: linear-gradient(90deg, rgba(24, 44, 80, 1) 0%, rgba(24, 44, 80, 1) 25%, rgba(24, 44, 80, 1) 50%, rgba(24, 44, 80, 1) 75%, rgba(6, 16, 36, 1) 100%);
+    color: white;
+}
+
 /* MAIN CONTACTO */
 
-.parteForm {
+
+.tituloForm {
+    padding: 1rem;
+    color: white;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0) 0%, rgb(40, 40, 40) 50%, rgba(0, 0, 0) 100%);
     text-align: center;
 }
 
-.tituloForm {
-    padding: 1.5rem;
-    color: white;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0) 0%, rgb(40, 40, 40) 50%, rgba(0, 0, 0) 100%);
+.form {
+    padding: 1.5rem 0 1.5rem 0;
 }
 
-.form {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form p {
     padding: 10px;
 }
 
+.form textarea {
+    border-radius: 7px;
+}
+
 .form input {
-    border-radius: 10px;
+    border-radius: 7px;
     text-align: center;
+    transition: .5s;
+}
+
+.form input:focus {
+    width: 20vw;
 }
 
 .form input[type=submit] {
+    margin-top: 1rem;
     width: 150px;
+}
+
+/* UBICACION */
+
+.ubicacion .tituloUbicacion {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0) 0%, rgb(40, 40, 40) 50%, rgba(0, 0, 0) 100%);
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.ubicacion iframe {
+    display: block;
+    width: 100%;
 }
 
 
 
-
-
+/* MEDIA QUERIES */
 
 @media (max-width: 567px) {
     .grid {
@@ -349,7 +397,7 @@
     /* Torneos */
 
     .tituloTorneos {
-        font-size: 22px;
+        padding: 1.5rem;
     }
 
     .torneos {
@@ -439,7 +487,7 @@
     /* Torneos */
 
     .tituloTorneos {
-        font-size: 22px;
+        padding: 1.5rem;
     }
 
     .torneos {
@@ -473,5 +521,108 @@
     .form textarea {
         width: 75%;
     }
+}
 
+@media (max-width: 991px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
+    /* header */
+
+    .nav-item {
+        padding: 0;
+    }
+
+    /* main index */
+
+    .textoPrimera {
+        font-size: 20px;
+        padding: 2rem;
+        max-width: 100%;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .listaTorneos {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .listaTorneos ul {
+        width: 100%;
+    }
+
+    /* footer */
+
+    .textoFooter {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .textoFooter ul {
+        width: 100%;
+    }
+
+    .textoCopy {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    /* Torneos */
+
+    .tituloTorneos {
+        padding: 1.5rem;
+    }
+
+    .torneos {
+        max-width: 80%;
+    }
+
+    .integrantes {
+        max-width: 65%;
+    }
+
+    /* Nosotros */
+
+    .textoNosotros p {
+        padding: 2rem
+    }
+
+    .listaPartners {
+        padding: 0;
+    }
+
+    .listaPartners li {
+        width: 75%;
+    }
+
+    .listaPartners img {
+        width: 100%;
+    }
+
+    /* Contacto */
+
+    .form textarea {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* Main index */
+    /* Carousel */
+
+    .carousel {
+        width: 100%;
+    }
+
+    /* footer */
+    .textoFooter {
+        align-items: center;
+    }
 }
