@@ -72,8 +72,8 @@
       font-size: 18px; }
       #index .main .primeraParte .textoPrimera .tituloPrimera {
         padding-bottom: 1rem; }
-        #index .main .primeraParte .textoPrimera .tituloPrimera p .textoResaltado {
-          font-weight: bold; }
+      #index .main .primeraParte .textoPrimera p .textoResaltado {
+        font-weight: bold; }
     #index .main .primeraParte .carousel {
       width: 85%; }
   #index .main .listaTorneos {
@@ -94,3 +94,55 @@
       justify-content: center; }
       #index .main .listaTorneos ul li {
         padding: .5rem; }
+
+#nosotros .main {
+  grid-area: main; }
+  #nosotros .main .textoNosotros {
+    text-align: center;
+    font-size: 18px; }
+    #nosotros .main .textoNosotros .tituloNosotros {
+      background-image: linear-gradient(90deg, black 0%, #282828 50%, black 100%);
+      padding: 1rem;
+      color: white; }
+    #nosotros .main .textoNosotros .subtituloNosotros {
+      background-image: linear-gradient(90deg, #061024 0%, #182c50 25%, #182c50 50%, #182c50 75%, #061024 100%);
+      padding: 1rem;
+      color: white; }
+    #nosotros .main .textoNosotros p {
+      padding: 2rem 25%; }
+      #nosotros .main .textoNosotros p .textoResaltado {
+        font-weight: bold; }
+  #nosotros .main .partners .tituloPartners {
+    background-image: linear-gradient(90deg, black 0%, #282828 50%, black 100%);
+    color: white;
+    text-align: center;
+    padding: 1rem; }
+  #nosotros .main .partners .listaPartners {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    #nosotros .main .partners .listaPartners li:hover {
+      background-color: #182c50; }
+    #nosotros .main .partners .listaPartners li a img {
+      width: 400px; }
+
+#torneos .main {
+  grid-area: main; }
+  #torneos .main .torneosRealizados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 18px; }
+    #torneos .main .torneosRealizados .tituloTorneos {
+      background-image: linear-gradient(90deg, black 0%, #282828 50%, black 100%);
+      padding: 1rem;
+      color: white;
+      width: 100%; }
+    #torneos .main .torneosRealizados .torneos {
+      max-width: 50%;
+      margin: 2.5rem auto; }
+      #torneos .main .torneosRealizados .torneos h3 {
+        margin-bottom: 10px; }

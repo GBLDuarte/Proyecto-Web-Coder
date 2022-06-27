@@ -17,11 +17,11 @@
 
                 .tituloPrimera {
                     padding-bottom: 1rem;
+                }
 
-                    p {
-                        .textoResaltado {
-                            font-weight: bold;
-                        }
+                p {
+                    .textoResaltado {
+                        font-weight: $negrita;
                     }
                 }
             }
