@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
     <!-- icono web -->
-    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="shortcut icon" href="../img/favicon.png">
     <!-- Vinculo animacion css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Bootstrap -->
@@ -20,11 +20,12 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- Vinculo CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>RLL Esports</title>
+    <title>Nosotros</title>
 </head>
 
-<body class="body">
+<body class="body" id="nosotros">
     <div class="grid">
+        <!-- Header -->
         <header class="header">
             <!-- Menu Navegacion -->
             <nav class="navbar navbar-expand-lg">
@@ -59,13 +60,14 @@
             </nav>
         </header>
 
+        <!-- Contenido -->
         <main class="main">
-            <article>
+            <section>
                 <!-- quienes somos -->
-                <section class="textoNosotros">
+                <div class="textoNosotros">
                     <h1 class="tituloNosotros wow animate__animated animate__pulse m-0">¿QUIENES SOMOS?</h1>
                     <h2 class="subtituloNosotros m-0">RLL ESPORTS</h2>
-                    <p class="m-0 wow animate__animated animate__flash"><span class="negrita">Nosotros somos RLL
+                    <p class="m-0 wow animate__animated animate__flash"><span class="textoResaltado">Nosotros somos RLL
                             Esports,</span> una organizacion de esports y
                         entretenimiento de Argentina creado en 2019, contamos con
                         nuestras propias oficinas fisicas ubicado en el Microcentro de la Ciudad de Buenos Aires.
@@ -77,18 +79,18 @@
                         Ademas
                         de haber trabajado en conjunto con grandes empresas del rubro como TDJ, Argentina Game Show,
                         Cablevision Flow, Gamergy, GGTech Entertainment, universidades como ITBA, UFASTA, etc. <span
-                            class="negrita">Nuestro principal
+                            class="textoResaltado">Nuestro principal
                             objetivo es impulsar el ecosistema de los esports como tambien el desarrollo de la
                             competitividad en la region,
                             aportando herramientas para los diferentes equipos amateurs, semiprofesionales y
                             profesionales
                             de
                             los diferentes juegos que se esten disputando en nuestra organizacion.</span></p>
-                </section>
+                </div>
                 <!-- partners con imagenes -->
-                <section class="partners">
+                <div class="partners">
                     <h2 class="tituloPartners wow animate__animated animate__pulse m-0">CON QUIENES HEMOS TRABAJADO</h2>
-                    <ul class="listaPartners m-0">
+                    <ul class="listaPartners m-0 p-0">
                         <li> <a href="https://www.argentinagameshow.com/" target="_blank">
                                 <img src="../img/logo/ags-png.png" alt="AGS">
                             </a>
@@ -114,10 +116,11 @@
                             </a>
                     </ul>
                     </li>
-                </section>
-            </article>
+                </div>
+            </section>
         </main>
 
+        <!-- Footer -->
         <footer class="footer">
             <div class="textoFooter">
                 <div class="listaFooter">
