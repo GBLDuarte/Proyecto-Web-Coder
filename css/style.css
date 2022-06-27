@@ -1,0 +1,96 @@
+/* Reset  */
+* {
+  margin: 0;
+  padding: 0; }
+
+.body {
+  background-color: silver;
+  font-family: 'Heebo', sans-serif; }
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "header header header header" "main main main main" "main main main main" "footer footer footer footer"; }
+
+.header {
+  grid-area: header;
+  background-image: linear-gradient(90deg, #061024 0%, #182c50 25%, #182c50 50%, #182c50 75%, #061024 100%); }
+  .header .navbar .container-fluid .navbar-brand img {
+    width: 150px;
+    padding: .5rem; }
+  .header .navbar .container-fluid .navbar-toggler {
+    background-color: #0b94d4; }
+  .header .navbar .container-fluid .navbar-collapse {
+    justify-content: flex-end; }
+    .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+      padding: 20px; }
+      .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+        color: white;
+        font-size: 20px; }
+        .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+          transition: .5s;
+          transform: scale(1.5);
+          color: #0b94d4; }
+
+.footer {
+  grid-area: footer;
+  background-image: linear-gradient(90deg, black 0%, #282828 50%, black 100%); }
+  .footer .textoFooter {
+    display: flex;
+    padding: 2rem;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    justify-content: space-between; }
+    .footer .textoFooter .listaFooter ul {
+      width: 400px;
+      display: flex;
+      justify-content: space-around;
+      list-style: none; }
+      .footer .textoFooter .listaFooter ul li a {
+        text-decoration: none;
+        color: white; }
+        .footer .textoFooter .listaFooter ul li a i:hover {
+          transform: scale(2);
+          color: #0b94d4;
+          transition: .3s; }
+    .footer .textoFooter .textoCopy {
+      text-align: center; }
+
+#index .main {
+  grid-area: main; }
+  #index .main .primeraParte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #index .main .primeraParte .textoPrimera {
+      max-width: 70%;
+      padding: 2rem;
+      text-align: center;
+      font-family: 'Heebo', sans-serif;
+      font-size: 18px; }
+      #index .main .primeraParte .textoPrimera .tituloPrimera {
+        padding-bottom: 1rem; }
+        #index .main .primeraParte .textoPrimera .tituloPrimera p .textoResaltado {
+          font-weight: bold; }
+    #index .main .primeraParte .carousel {
+      width: 85%; }
+  #index .main .listaTorneos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    padding: 3rem;
+    font-size: 18px; }
+    #index .main .listaTorneos .tituloLista {
+      padding-bottom: 1rem;
+      text-align: center; }
+    #index .main .listaTorneos ul {
+      list-style: none;
+      display: flex;
+      max-width: 70%;
+      flex-wrap: wrap;
+      justify-content: center; }
+      #index .main .listaTorneos ul li {
+        padding: .5rem; }

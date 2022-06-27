@@ -1,0 +1,40 @@
+.footer {
+    grid-area: footer;
+    background-image: $fondoNegro;
+
+    .textoFooter {
+        display: flex;
+        padding: 2rem;
+        color: white;
+        font-family: 'Heebo', sans-serif;
+        justify-content: space-between;
+
+        .listaFooter {
+            ul {
+                width: 400px;
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: white;
+
+                        i {
+                            &:hover {
+                                transform: scale(2);
+                                color: #0b94d4;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .textoCopy {
+            text-align: center;
+        }
+    }
+}

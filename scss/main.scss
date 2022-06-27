@@ -1,0 +1,31 @@
+/* Reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-color: rgb(192, 192, 192);
+    font-family: 'Heebo', sans-serif;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+// IMPORTS
+
+// Variables
+@import './sections/variables';
+
+// Contenido
+@import './sections/header';
+@import './sections/footer';
+@import './sections/index';

@@ -1,3 +1,41 @@
-h1 {
-    color: white;
+.header {
+    grid-area: header;
+    background-image: $fondoAzul;
+
+    .navbar {
+        .container-fluid {
+            .navbar-brand {
+                img {
+                    width: 150px;
+                    padding: .5rem;
+                }
+            }
+
+            .navbar-toggler {
+                background-color: #0b94d4;
+            }
+
+            .navbar-collapse {
+                justify-content: flex-end;
+
+                .navbar-nav {
+                    .nav-item {
+                        padding: 20px;
+
+                        .nav-link {
+                            color: white;
+                            font-size: 20px;
+
+                            &:hover {
+                                transition: .5s;
+                                transform: scale(1.5);
+                                color: #0b94d4;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
 }
