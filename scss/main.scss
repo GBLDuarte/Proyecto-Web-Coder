@@ -22,8 +22,9 @@
 
 // IMPORTS
 
-// Variables
-@import './sections/variables';
+// Variables, extend, mixin, map
+@import './importante/variables';
+@import './importante/extend';
 
 // Contenido
 
@@ -37,3 +38,6 @@
 @import './sections/torneos';
 @import './sections/staff';
 @import './sections/contacto';
+
+// Media queries
+@import './sections/mediaq';

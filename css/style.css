@@ -207,3 +207,140 @@
   #contacto .main .ubicacion iframe {
     display: block;
     width: 100%; }
+
+@media (max-width: 567px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer"; }
+    .grid .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+      padding: 0; }
+    .grid .footer .textoFooter {
+      flex-direction: column;
+      padding: 1.5rem; }
+      .grid .footer .textoFooter .listaFooter ul {
+        width: 100%; }
+      .grid .footer .textoFooter .textoCopy {
+        width: 100%;
+        margin-top: 1rem; }
+  #index .main .primeraParte .textoPrimera {
+    font-size: 20px;
+    padding: 2rem;
+    max-width: 100%; }
+  #index .main .primeraParte .carousel {
+    width: 100%; }
+  #index .main .listaTorneos {
+    padding: 2rem 0 2rem 0; }
+    #index .main .listaTorneos ul {
+      max-width: 100%; }
+  #torneos .main .torneosRealizados .tituloTorneos {
+    padding: 1.5rem; }
+  #torneos .main .torneosRealizados .torneos {
+    max-width: 80%; }
+  #staff .main .parteIntegrantes .integrantes {
+    max-width: 65%; }
+  #nosotros .main .textoNosotros p {
+    padding: 2rem; }
+  #nosotros .main .partners .listaPartners {
+    padding: 0; }
+    #nosotros .main .partners .listaPartners li {
+      width: 75%; }
+      #nosotros .main .partners .listaPartners li a img {
+        width: 100%; }
+  #contacto .main .parteForm .form form textarea {
+    width: 75%; } }
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer"; }
+    .grid .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+      padding: 0; }
+    .grid .footer .textoFooter {
+      flex-direction: column;
+      padding: 1.5rem; }
+      .grid .footer .textoFooter .listaFooter ul {
+        width: 100%; }
+      .grid .footer .textoFooter .textoCopy {
+        width: 100%;
+        margin-top: 1rem; }
+  #index .main .primeraParte .textoPrimera {
+    font-size: 20px;
+    padding: 2rem;
+    max-width: 100%; }
+  #index .main .primeraParte .carousel {
+    width: 100%; }
+  #index .main .listaTorneos {
+    padding: 2rem 0 2rem 0; }
+    #index .main .listaTorneos ul {
+      max-width: 100%; }
+  #torneos .main .torneosRealizados .tituloTorneos {
+    padding: 1.5rem; }
+  #torneos .main .torneosRealizados .torneos {
+    max-width: 80%; }
+  #staff .main .parteIntegrantes .integrantes {
+    max-width: 65%; }
+  #nosotros .main .textoNosotros p {
+    padding: 2rem; }
+  #nosotros .main .partners .listaPartners {
+    padding: 0; }
+    #nosotros .main .partners .listaPartners li {
+      width: 75%; }
+      #nosotros .main .partners .listaPartners li a img {
+        width: 100%; }
+  #contacto .main .parteForm .form form textarea {
+    width: 75%; } }
+
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer"; }
+    .grid .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+      padding: 0; }
+    .grid .footer .textoFooter {
+      flex-direction: column;
+      padding: 1.5rem; }
+      .grid .footer .textoFooter .listaFooter ul {
+        width: 100%;
+        justify-content: space-evenly; }
+      .grid .footer .textoFooter .textoCopy {
+        width: 100%;
+        margin-top: 1rem; }
+  #index .main .primeraParte .textoPrimera {
+    font-size: 20px;
+    padding: 2rem;
+    max-width: 100%; }
+  #index .main .primeraParte .carousel {
+    width: 100%; }
+  #index .main .listaTorneos {
+    padding: 2rem 0 2rem 0; }
+    #index .main .listaTorneos ul {
+      max-width: 100%; }
+  #torneos .main .torneosRealizados .tituloTorneos {
+    padding: 1.5rem; }
+  #torneos .main .torneosRealizados .torneos {
+    max-width: 80%; }
+  #staff .main .parteIntegrantes .integrantes {
+    max-width: 65%; }
+  #nosotros .main .textoNosotros p {
+    padding: 2rem; }
+  #nosotros .main .partners .listaPartners {
+    padding: 0; }
+    #nosotros .main .partners .listaPartners li {
+      width: 75%; }
+      #nosotros .main .partners .listaPartners li a img {
+        width: 100%; }
+  #contacto .main .parteForm .form form textarea {
+    width: 75%; } }
+
+@media (max-width: 1200px) {
+  #index .main .primeraParte .carousel {
+    width: 100%; }
+  .footer .textoFooter {
+    flex-direction: column;
+    padding: 1.5rem; }
+    .footer .textoFooter .listaFooter ul {
+      width: 100%;
+      justify-content: space-evenly; }
+    .footer .textoFooter .textoCopy {
+      width: 100%;
+      margin-top: 1rem; } }
