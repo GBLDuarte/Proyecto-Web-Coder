@@ -10,9 +10,7 @@
             font-size: $tamañoFuente;
 
             .tituloTorneos {
-                background-image: $fondoNegro;
-                padding: 1rem;
-                color: white;
+                @extend %titulosPrincipales;
                 width: 100%;
             }
 

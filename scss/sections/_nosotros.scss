@@ -7,15 +7,11 @@
             font-size: $tamañoFuente;
 
             .tituloNosotros {
-                background-image: $fondoNegro;
-                padding: 1rem;
-                color: white;
+                @include titulos($fondoNegro, $espacioTitulo);
             }
 
             .subtituloNosotros {
-                background-image: $fondoAzul;
-                padding: 1rem;
-                color: white;
+                @include titulos($fondoAzul, 16px)
             }
 
             p {
@@ -29,10 +25,8 @@
 
         .partners {
             .tituloPartners {
-                background-image: $fondoNegro;
-                color: white;
+                @extend %titulosPrincipales;
                 text-align: center;
-                padding: 1rem;
             }
 
             .listaPartners {

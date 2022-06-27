@@ -1,0 +1,13 @@
+// Extend
+%titulosPrincipales {
+    background-image: $fondoNegro;
+    padding: 1rem;
+    color: white;
+}
+
+// Mixin
+@mixin titulos($fondoNegro, $espacioTitulo) {
+    background-image: $fondoNegro;
+    padding: $espacioTitulo;
+    color: white;
+}

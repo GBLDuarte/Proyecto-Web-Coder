@@ -13,6 +13,11 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "header header header header" "main main main main" "main main main main" "footer footer footer footer"; }
 
+#nosotros .main .partners .tituloPartners, #torneos .main .torneosRealizados .tituloTorneos {
+  background-image: linear-gradient(90deg, black 0%, #282828 50%, black 100%);
+  padding: 1rem;
+  color: white; }
+
 .header {
   grid-area: header;
   background-image: linear-gradient(90deg, #061024 0%, #182c50 25%, #182c50 50%, #182c50 75%, #061024 100%); }
@@ -106,17 +111,14 @@
       color: white; }
     #nosotros .main .textoNosotros .subtituloNosotros {
       background-image: linear-gradient(90deg, #061024 0%, #182c50 25%, #182c50 50%, #182c50 75%, #061024 100%);
-      padding: 1rem;
+      padding: 16px;
       color: white; }
     #nosotros .main .textoNosotros p {
       padding: 2rem 25%; }
       #nosotros .main .textoNosotros p .textoResaltado {
         font-weight: bold; }
   #nosotros .main .partners .tituloPartners {
-    background-image: linear-gradient(90deg, black 0%, #282828 50%, black 100%);
-    color: white;
-    text-align: center;
-    padding: 1rem; }
+    text-align: center; }
   #nosotros .main .partners .listaPartners {
     display: flex;
     list-style: none;
@@ -137,9 +139,6 @@
     text-align: center;
     font-size: 18px; }
     #torneos .main .torneosRealizados .tituloTorneos {
-      background-image: linear-gradient(90deg, black 0%, #282828 50%, black 100%);
-      padding: 1rem;
-      color: white;
       width: 100%; }
     #torneos .main .torneosRealizados .torneos {
       max-width: 50%;
