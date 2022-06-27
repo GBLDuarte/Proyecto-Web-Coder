@@ -26,8 +26,14 @@
 @import './sections/variables';
 
 // Contenido
+
+// Todas las secciones
 @import './sections/header';
 @import './sections/footer';
+
+// Secciones individuales
 @import './sections/index';
 @import './sections/nosotros';
 @import './sections/torneos';
+@import './sections/staff';
+@import './sections/contacto';

@@ -146,3 +146,64 @@
       margin: 2.5rem auto; }
       #torneos .main .torneosRealizados .torneos h3 {
         margin-bottom: 10px; }
+
+#staff .main {
+  grid-area: main; }
+  #staff .main .parteIntegrantes {
+    text-align: center;
+    font-size: 18px; }
+    #staff .main .parteIntegrantes .tituloIntegrantes {
+      background-image: linear-gradient(90deg, black 0%, #282828 50%, black 100%);
+      color: white;
+      padding: 1rem; }
+    #staff .main .parteIntegrantes .integrantes {
+      margin: 2rem auto; }
+      #staff .main .parteIntegrantes .integrantes ol li {
+        padding-bottom: 20px;
+        list-style: none; }
+        #staff .main .parteIntegrantes .integrantes ol li .textoResaltado {
+          font-weight: bold; }
+  #staff .main .accordion {
+    border: solid 2px black;
+    border-radius: 5px; }
+    #staff .main .accordion .accordion-item {
+      background-color: silver; }
+      #staff .main .accordion .accordion-item .accordion-header .accordion-button {
+        background-image: linear-gradient(90deg, #061024 0%, #182c50 25%, #182c50 50%, #182c50 75%, #061024 100%);
+        color: white; }
+
+#contacto .main {
+  grid-area: main; }
+  #contacto .main .parteForm .tituloForm {
+    padding: 1rem;
+    color: white;
+    background-image: linear-gradient(90deg, black 0%, #282828 50%, black 100%);
+    text-align: center; }
+  #contacto .main .parteForm .form {
+    padding: 1.5rem 0 1.5rem 0; }
+    #contacto .main .parteForm .form form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #contacto .main .parteForm .form form .textoResaltado {
+        padding: 10px;
+        font-weight: bold; }
+      #contacto .main .parteForm .form form input {
+        border-radius: 7px;
+        text-align: center;
+        transition: .5s; }
+        #contacto .main .parteForm .form form input:focus {
+          width: 20vw; }
+      #contacto .main .parteForm .form form textarea {
+        border-radius: 7px; }
+      #contacto .main .parteForm .form form input[type=submit] {
+        margin-top: 1rem;
+        width: 150px; }
+  #contacto .main .ubicacion .tituloUbicacion {
+    background-image: linear-gradient(90deg, black 0%, #282828 50%, black 100%);
+    padding: 1rem;
+    color: white;
+    text-align: center; }
+  #contacto .main .ubicacion iframe {
+    display: block;
+    width: 100%; }
