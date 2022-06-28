@@ -1,0 +1,52 @@
+IMAGENES: 
+Las imagenes que tenia en el repositorio lo subi a la nube de cloudinary para asi liberar espacio del proyecto. 
+
+CARPETAS:
+Index como pagina principal de HTML, las demas paginas los ubique en una carpeta denominada "pages" para darle menos prioridad.
+
+SITEMAPS:
+Creacion de sitemaps para mostrarle al navegador las prioridades de mi sitio web.
+
+HTML:
+index.html - 
+Uso de un encabezado H1, que describe el contenido de la pagina en este caso "RESUMEN", donde explica brevemente los puntos importantes del sitio web. 
+Uso de un encabezado H2, actua como subtitulo despues del texto de resumen. 
+
+nosotros.html - 
+Uso de un encabezado H1, donde se centra en una pregunta principal que describe todo el contenido de la pagina, en este caso "QUIENES SOMOS?"
+2 encabezados H2, el primer encabezado responde en forma de subtitulo a la pregunta del H1 con el nombre de la organizacion "RLL ESPORTS";
+el segundo encabezado indica el comienzo de otra seccion dentro de la pagina que indica las empresas destacadas con las que hemos trabajado a lo largo de nuestra trayectoria justamente con un "CON QUIENES HEMOS TRABAJADO".
+
+torneos.html - 
+Un encabezado H1, donde actua como titulo en esta nueva seccion, "TORNEOS REALIZADOS DURANTE 2020-2022".
+5 encabezados H3, actuan como titulo descriptivo de cada torneo acompañado con su informacion mas detallada mediante un parrafo.
+
+staff.html -
+Un encabezado H1, con titulo de "INTEGRANTES DE LA ORGANIZACION" dando a entender las personas que conforman esta organizacion.
+3 encabezados H2, que incluye por defecto en el acordion de bootstrap con nombres de "Principios, Objetivos, Cosas" 
+
+contacto.html - 
+Un encabezado H1, con titulo de "QUIERES PERTENECER A NUESTRO GRUPO. CONTACTANOS! centrandose en la busqueda de personal, staff interesado (contenido principal de la pagina). 
+Un encabezado H2, con titulo de "UBICACION" indicando donde nos pueden ubicar de manera presencial. 
+
+METADATOS:
+
+index.html - 
+Agregue el meta keywords donde puse palabras clave de esta pagina: "esports, RLL, organización, Argentina, torneos".
+Agregue meta description con informacion resumida del sitio: "RLL Esports, una organización de esports situada en Argentina encargada al entretenimiento y a los deportes electronicos."
+
+nosotros.html - 
+Agregue el meta keywords: "RLL, objetivo, organizacion, Argentina, 2019"
+Agregue meta description: "Descripcion completa de RLL Esports, incluyendo nuestro objetivo principal de nuestra organizacion"
+
+torneos.html - 
+Agregue meta keywords: "torneos, realizados, rocket league, RLL, valorant, flow, 2020-2022"
+Agregue meta description: "Lista de torneos realizados en la organizacion RLL Esports durante 2020-2022"
+
+staff.html -
+Agregue meta keywords: "Integrantes, organizacion, esports, CEO, Director"
+Agregue meta description: "Lista breve de las personas que conforman nuestra organizacion de esports"
+
+contacto.html -
+Agregue meta keywords: "contacto, trabajo, nosotros, busqueda"
+Agregue meta description: "Seccion enfocada a la busqueda de staff y/o gente especializada en el rubro para trabajar con nosotros"
