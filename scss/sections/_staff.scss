@@ -1,0 +1,48 @@
+#staff {
+    .main {
+        grid-area: main;
+
+        .parteIntegrantes {
+            text-align: center;
+            font-size: $tamañoFuente;
+
+            .tituloIntegrantes {
+                @extend %titulosPrincipales;
+            }
+
+            .integrantes {
+                margin: 2rem auto;
+
+                ol {
+                    li {
+                        padding-bottom: 20px;
+                        list-style: none;
+
+                        .textoResaltado {
+                            font-weight: $negrita;
+                        }
+                    }
+                }
+            }
+        }
+
+        // ACORDION
+        .accordion {
+            border: solid 2px black;
+            border-radius: 5px;
+
+            .accordion-item {
+                background-color: rgb(192, 192, 192);
+
+                .accordion-header {
+                    .accordion-button {
+                        background-image: $fondoAzul;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

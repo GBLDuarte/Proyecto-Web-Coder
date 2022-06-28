@@ -1,627 +1,329 @@
 /* Reset  */
 * {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
 .body {
-    background-color: rgb(192, 192, 192);
-    font-family: 'Heebo', sans-serif;
-}
+  background-color: silver;
+  font-family: 'Heebo', sans-serif; }
 
 /* GRID */
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "header header header header"
-        "main main main main"
-        "main main main main"
-        "footer footer footer footer";
-}
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "header header header header" "main main main main" "main main main main" "footer footer footer footer"; }
 
-/* HEADER */
+#nosotros .main .partners .tituloPartners, #torneos .main .torneosRealizados .tituloTorneos, #staff .main .parteIntegrantes .tituloIntegrantes, #contacto .main .parteForm .tituloForm, #contacto .main .ubicacion .tituloUbicacion {
+  background-image: linear-gradient(90deg, black 0%, #282828 50%, black 100%);
+  padding: 1rem;
+  color: white;
+  text-align: center; }
+
 .header {
-    grid-area: header;
-    background-image: linear-gradient(90deg, rgba(6, 16, 36, 1) 0%, rgba(24, 44, 80, 1) 25%, rgba(24, 44, 80, 1) 50%, rgba(24, 44, 80, 1) 75%, rgba(6, 16, 36, 1) 100%);
-}
-
-.navbar img {
+  grid-area: header;
+  background-image: linear-gradient(90deg, #061024 0%, #182c50 25%, #182c50 50%, #182c50 75%, #061024 100%); }
+  .header .navbar .container-fluid .navbar-brand img {
     width: 150px;
-    padding: .5rem;
-}
-
-.navbar-collapse {
-    justify-content: flex-end;
-}
-
-.navbar-toggler {
-    background-color: #0b94d4;
-}
-
-.nav-item {
-    padding: 20px;
-}
-
-.nav-link {
-    color: white;
-    font-size: 20px;
-}
-
-.nav-link:hover {
-    transition: .5s;
-    transform: scale(1.5);
-    color: #0b94d4;
-}
-
-
-/* FOOTER */
+    padding: .5rem; }
+  .header .navbar .container-fluid .navbar-toggler {
+    background-color: #0b94d4; }
+  .header .navbar .container-fluid .navbar-collapse {
+    justify-content: flex-end; }
+    .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+      padding: 20px; }
+      .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+        color: white;
+        font-size: 20px; }
+        .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+          transition: .5s;
+          transform: scale(1.5);
+          color: #0b94d4; }
 
 .footer {
-    grid-area: footer;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0) 0%, rgb(40, 40, 40) 50%, rgba(0, 0, 0) 100%);
-}
-
-.textoFooter {
+  grid-area: footer;
+  background-image: linear-gradient(90deg, black 0%, #282828 50%, black 100%); }
+  .footer .textoFooter {
     display: flex;
     padding: 2rem;
     color: white;
-    justify-content: space-between;
-}
+    font-family: 'Heebo', sans-serif;
+    justify-content: space-between; }
+    .footer .textoFooter .listaFooter ul {
+      width: 400px;
+      display: flex;
+      justify-content: space-around;
+      list-style: none; }
+      .footer .textoFooter .listaFooter ul li a {
+        text-decoration: none;
+        color: white; }
+        .footer .textoFooter .listaFooter ul li a i:hover {
+          transform: scale(2);
+          color: #0b94d4;
+          transition: .3s; }
+    .footer .textoFooter .textoCopy {
+      text-align: center; }
 
-.textoFooter ul {
-    width: 400px;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
-
-.textoFooter a {
-    text-decoration: none;
-    color: white;
-}
-
-.textoFooter i:hover {
-    transform: scale(2);
-    color: #0b94d4;
-    transition: .3s;
-}
-
-.textoCopy {
-    text-align: center;
-}
-
-
-/* MAIN INDEX */
-
-.main {
-    grid-area: main;
-}
-
-.primeraParte {
+#index .main {
+  grid-area: main; }
+  #index .main .primeraParte {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-.textoPrimera {
-    max-width: 70%;
-    padding: 2rem;
-    text-align: center;
-    font-size: 18px;
-}
-
-.textoResaltado {
-    font-weight: bold;
-}
-
-.tituloPrimera {
-    padding-bottom: 1rem;
-}
-
-/* CAROUSEL */
-
-.carousel {
-    width: 85%;
-}
-
-/* LISTA TORNEOS (INDEX) */
-
-.listaTorneos {
+    align-items: center; }
+    #index .main .primeraParte .textoPrimera {
+      max-width: 70%;
+      padding: 2rem;
+      text-align: center;
+      font-size: 18px; }
+      #index .main .primeraParte .textoPrimera .tituloPrimera {
+        padding-bottom: 1rem; }
+      #index .main .primeraParte .textoPrimera p .textoResaltado {
+        font-weight: bold; }
+    #index .main .primeraParte .carousel {
+      width: 85%; }
+  #index .main .listaTorneos {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
     padding: 3rem;
-    font-size: 18px;
-}
+    font-size: 18px; }
+    #index .main .listaTorneos .tituloLista {
+      padding-bottom: 1rem;
+      text-align: center; }
+    #index .main .listaTorneos ul {
+      list-style: none;
+      display: flex;
+      max-width: 70%;
+      flex-wrap: wrap;
+      justify-content: center; }
+      #index .main .listaTorneos ul li {
+        padding: .5rem; }
 
-.listaTorneos ul {
-    list-style: none;
-    display: flex;
-    max-width: 70%;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.listaTorneos li {
-    padding: .5rem;
-}
-
-
-.tituloLista {
-    padding-bottom: 1rem;
+#nosotros .main {
+  grid-area: main; }
+  #nosotros .main .textoNosotros {
     text-align: center;
-}
-
-/* MAIN NOSOTROS */
-
-.textoNosotros {
-    text-align: center;
-    font-size: 18px;
-
-}
-
-.tituloNosotros {
-    color: white;
-    padding: 1rem;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0) 0%, rgb(40, 40, 40) 50%, rgba(0, 0, 0) 100%);
-}
-
-.subtituloNosotros {
-    background-image: linear-gradient(90deg, rgba(6, 16, 36, 1) 0%, rgba(24, 44, 80, 1) 25%, rgba(24, 44, 80, 1) 50%, rgba(24, 44, 80, 1) 75%, rgba(6, 16, 36, 1) 100%);
-    padding: 1rem;
-    color: white;
-}
-
-.textoNosotros p {
-    padding: 2rem 25%;
-}
-
-/* CON QUIENES TRABAJAMOS (NOSOTROS) */
-
-.tituloPartners {
-    background-image: linear-gradient(90deg, rgba(0, 0, 0) 0%, rgb(40, 40, 40) 50%, rgba(0, 0, 0) 100%);
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-.listaPartners {
+    font-size: 18px; }
+    #nosotros .main .textoNosotros .tituloNosotros {
+      background-image: linear-gradient(90deg, black 0%, #282828 50%, black 100%);
+      padding: 1rem;
+      color: white; }
+    #nosotros .main .textoNosotros .subtituloNosotros {
+      background-image: linear-gradient(90deg, #061024 0%, #182c50 25%, #182c50 50%, #182c50 75%, #061024 100%);
+      padding: 16px;
+      color: white; }
+    #nosotros .main .textoNosotros p {
+      padding: 2rem 25%; }
+      #nosotros .main .textoNosotros p .textoResaltado {
+        font-weight: bold; }
+  #nosotros .main .partners .listaPartners {
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-}
+    flex-wrap: wrap; }
+    #nosotros .main .partners .listaPartners li:hover {
+      background-color: #182c50; }
+    #nosotros .main .partners .listaPartners li a img {
+      width: 400px; }
 
-.listaPartners li:hover {
-    background-color: #182c50;
-}
-
-.listaPartners img {
-    width: 400px;
-}
-
-/* MAIN TORNEOS */
-
-.torneosRealizados {
+#torneos .main {
+  grid-area: main; }
+  #torneos .main .torneosRealizados {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 18px;
-}
+    font-size: 18px; }
+    #torneos .main .torneosRealizados .tituloTorneos {
+      width: 100%; }
+    #torneos .main .torneosRealizados .torneos {
+      max-width: 50%;
+      margin: 2.5rem auto; }
+      #torneos .main .torneosRealizados .torneos h3 {
+        margin-bottom: 10px; }
 
-.tituloTorneos {
-    background-image: linear-gradient(90deg, rgba(0, 0, 0) 0%, rgb(40, 40, 40) 50%, rgba(0, 0, 0) 100%);
-    padding: 1rem;
-    color: white;
-    width: 100%;
-}
-
-.torneos {
-    max-width: 50%;
-    margin: 2.5rem auto;
-}
-
-.torneos h3 {
-    margin-bottom: 10px;
-}
-
-/* MAIN STAFF */
-
-.parteIntegrantes {
+#staff .main {
+  grid-area: main; }
+  #staff .main .parteIntegrantes {
     text-align: center;
-    font-size: 18px;
-}
-
-.tituloIntegrantes {
-    background-image: linear-gradient(90deg, rgba(0, 0, 0) 0%, rgb(40, 40, 40) 50%, rgba(0, 0, 0) 100%);
-    color: white;
-    padding: 1rem;
-}
-
-.integrantes {
-    margin: 2rem auto;
-}
-
-.integrantes li {
-    padding-bottom: 20px;
-    list-style: none;
-}
-
-/* ACORDION */
-
-.accordion {
+    font-size: 18px; }
+    #staff .main .parteIntegrantes .integrantes {
+      margin: 2rem auto; }
+      #staff .main .parteIntegrantes .integrantes ol li {
+        padding-bottom: 20px;
+        list-style: none; }
+        #staff .main .parteIntegrantes .integrantes ol li .textoResaltado {
+          font-weight: bold; }
+  #staff .main .accordion {
     border: solid 2px black;
-    border-radius: 5px;
-}
+    border-radius: 5px; }
+    #staff .main .accordion .accordion-item {
+      background-color: silver; }
+      #staff .main .accordion .accordion-item .accordion-header .accordion-button {
+        background-image: linear-gradient(90deg, #061024 0%, #182c50 25%, #182c50 50%, #182c50 75%, #061024 100%);
+        color: white; }
 
-.accordion-item {
-    background-color: rgb(192, 192, 192);
-}
-
-.accordion-item .accordion-button {
-    background-image: linear-gradient(90deg, rgba(24, 44, 80, 1) 0%, rgba(24, 44, 80, 1) 25%, rgba(24, 44, 80, 1) 50%, rgba(24, 44, 80, 1) 75%, rgba(6, 16, 36, 1) 100%);
-    color: white;
-}
-
-/* MAIN CONTACTO */
-
-
-.tituloForm {
-    padding: 1rem;
-    color: white;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0) 0%, rgb(40, 40, 40) 50%, rgba(0, 0, 0) 100%);
-    text-align: center;
-}
-
-.form {
-    padding: 1.5rem 0 1.5rem 0;
-}
-
-.form form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form p {
-    padding: 10px;
-}
-
-.form textarea {
-    border-radius: 7px;
-}
-
-.form input {
-    border-radius: 7px;
-    text-align: center;
-    transition: .5s;
-}
-
-.form input:focus {
-    width: 20vw;
-}
-
-.form input[type=submit] {
-    margin-top: 1rem;
-    width: 150px;
-}
-
-/* UBICACION */
-
-.ubicacion .tituloUbicacion {
-    background-image: linear-gradient(90deg, rgba(0, 0, 0) 0%, rgb(40, 40, 40) 50%, rgba(0, 0, 0) 100%);
-    padding: 1rem;
-    color: white;
-    text-align: center;
-}
-
-.ubicacion iframe {
+#contacto .main {
+  grid-area: main; }
+  #contacto .main .parteForm .form {
+    padding: 1.5rem 0 1.5rem 0; }
+    #contacto .main .parteForm .form form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #contacto .main .parteForm .form form .textoResaltado {
+        padding: 10px;
+        font-weight: bold; }
+      #contacto .main .parteForm .form form input {
+        border-radius: 7px;
+        text-align: center;
+        transition: .5s; }
+        #contacto .main .parteForm .form form input:focus {
+          width: 20vw; }
+      #contacto .main .parteForm .form form textarea {
+        border-radius: 7px; }
+      #contacto .main .parteForm .form form input[type=submit] {
+        margin-top: 1rem;
+        width: 150px; }
+  #contacto .main .ubicacion iframe {
     display: block;
-    width: 100%;
-}
-
-
-
-/* MEDIA QUERIES */
+    width: 100%; }
 
 @media (max-width: 567px) {
-    .grid {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-    }
-
-    /* header */
-
-    .nav-item {
-        padding: 0;
-    }
-
-    /* main index */
-
-    .textoPrimera {
-        font-size: 20px;
-        padding: 2rem;
-        max-width: 100%;
-    }
-
-    .carousel {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer"; }
+    .grid .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+      padding: 0; }
+    .grid .footer .textoFooter {
+      flex-direction: column;
+      padding: 1.5rem; }
+      .grid .footer .textoFooter .listaFooter ul {
+        width: 100%; }
+      .grid .footer .textoFooter .textoCopy {
         width: 100%;
-    }
-
-    .listaTorneos {
-        padding: 2rem 0 2rem 0;
-    }
-
-    .listaTorneos ul {
-        max-width: 100%;
-    }
-
-
-    /* footer */
-
-    .textoFooter {
-        flex-direction: column;
-        padding: 1.5rem;
-    }
-
-    .textoFooter ul {
-        width: 100%;
-    }
-
-    .textoCopy {
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    /* Torneos */
-
-    .tituloTorneos {
-        padding: 1.5rem;
-    }
-
-    .torneos {
-        max-width: 80%;
-    }
-
-    .integrantes {
-        max-width: 65%;
-    }
-
-    /* Nosotros */
-
-    .textoNosotros p {
-        padding: 2rem
-    }
-
-    .listaPartners {
-        padding: 0;
-    }
-
-    .listaPartners li {
-        width: 75%;
-    }
-
-    .listaPartners img {
-        width: 100%;
-    }
-
-    /* Contacto */
-
-    .form textarea {
-        width: 75%;
-    }
-}
+        margin-top: 1rem; }
+  #index .main .primeraParte .textoPrimera {
+    font-size: 20px;
+    padding: 2rem;
+    max-width: 100%; }
+  #index .main .primeraParte .carousel {
+    width: 100%; }
+  #index .main .listaTorneos {
+    padding: 2rem 0 2rem 0; }
+    #index .main .listaTorneos ul {
+      max-width: 100%; }
+  #torneos .main .torneosRealizados .tituloTorneos {
+    padding: 1.5rem; }
+  #torneos .main .torneosRealizados .torneos {
+    max-width: 80%; }
+  #staff .main .parteIntegrantes .integrantes {
+    max-width: 65%; }
+  #nosotros .main .textoNosotros p {
+    padding: 2rem; }
+  #nosotros .main .partners .listaPartners {
+    padding: 0; }
+    #nosotros .main .partners .listaPartners li {
+      width: 75%; }
+      #nosotros .main .partners .listaPartners li a img {
+        width: 100%; }
+  #contacto .main .parteForm .form form textarea {
+    width: 75%; } }
 
 @media (max-width: 768px) {
-    .grid {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-    }
-
-    /* header */
-
-    .nav-item {
-        padding: 0;
-    }
-
-    /* main index */
-
-    .textoPrimera {
-        font-size: 20px;
-        padding: 2rem;
-        max-width: 100%;
-    }
-
-    .carousel {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer"; }
+    .grid .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+      padding: 0; }
+    .grid .footer .textoFooter {
+      flex-direction: column;
+      padding: 1.5rem; }
+      .grid .footer .textoFooter .listaFooter ul {
+        width: 100%; }
+      .grid .footer .textoFooter .textoCopy {
         width: 100%;
-    }
-
-    .listaTorneos {
-        padding: 2rem 0 2rem 0;
-    }
-
-    .listaTorneos ul {
-        width: 100%;
-    }
-
-    /* footer */
-
-    .textoFooter {
-        flex-direction: column;
-        padding: 1.5rem;
-    }
-
-    .textoFooter ul {
-        width: 100%;
-    }
-
-    .textoCopy {
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    /* Torneos */
-
-    .tituloTorneos {
-        padding: 1.5rem;
-    }
-
-    .torneos {
-        max-width: 80%;
-    }
-
-    .integrantes {
-        max-width: 65%;
-    }
-
-    /* Nosotros */
-
-    .textoNosotros p {
-        padding: 2rem
-    }
-
-    .listaPartners {
-        padding: 0;
-    }
-
-    .listaPartners li {
-        width: 75%;
-    }
-
-    .listaPartners img {
-        width: 100%;
-    }
-
-    /* Contacto */
-
-    .form textarea {
-        width: 75%;
-    }
-}
+        margin-top: 1rem; }
+  #index .main .primeraParte .textoPrimera {
+    font-size: 20px;
+    padding: 2rem;
+    max-width: 100%; }
+  #index .main .primeraParte .carousel {
+    width: 100%; }
+  #index .main .listaTorneos {
+    padding: 2rem 0 2rem 0; }
+    #index .main .listaTorneos ul {
+      max-width: 100%; }
+  #torneos .main .torneosRealizados .tituloTorneos {
+    padding: 1.5rem; }
+  #torneos .main .torneosRealizados .torneos {
+    max-width: 80%; }
+  #staff .main .parteIntegrantes .integrantes {
+    max-width: 65%; }
+  #nosotros .main .textoNosotros p {
+    padding: 2rem; }
+  #nosotros .main .partners .listaPartners {
+    padding: 0; }
+    #nosotros .main .partners .listaPartners li {
+      width: 75%; }
+      #nosotros .main .partners .listaPartners li a img {
+        width: 100%; }
+  #contacto .main .parteForm .form form textarea {
+    width: 75%; } }
 
 @media (max-width: 991px) {
-    .grid {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-    }
-
-    /* header */
-
-    .nav-item {
-        padding: 0;
-    }
-
-    /* main index */
-
-    .textoPrimera {
-        font-size: 20px;
-        padding: 2rem;
-        max-width: 100%;
-    }
-
-    .carousel {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer"; }
+    .grid .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+      padding: 0; }
+    .grid .footer .textoFooter {
+      flex-direction: column;
+      padding: 1.5rem; }
+      .grid .footer .textoFooter .listaFooter ul {
         width: 100%;
-    }
-
-    .listaTorneos {
-        padding: 2rem 0 2rem 0;
-    }
-
-    .listaTorneos ul {
+        justify-content: space-evenly; }
+      .grid .footer .textoFooter .textoCopy {
         width: 100%;
-    }
-
-    /* footer */
-
-    .textoFooter {
-        flex-direction: column;
-        padding: 1.5rem;
-    }
-
-    .textoFooter ul {
-        width: 100%;
-    }
-
-    .textoCopy {
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    /* Torneos */
-
-    .tituloTorneos {
-        padding: 1.5rem;
-    }
-
-    .torneos {
-        max-width: 80%;
-    }
-
-    .integrantes {
-        max-width: 65%;
-    }
-
-    /* Nosotros */
-
-    .textoNosotros p {
-        padding: 2rem
-    }
-
-    .listaPartners {
-        padding: 0;
-    }
-
-    .listaPartners li {
-        width: 75%;
-    }
-
-    .listaPartners img {
-        width: 100%;
-    }
-
-    /* Contacto */
-
-    .form textarea {
-        width: 75%;
-    }
-}
+        margin-top: 1rem; }
+  #index .main .primeraParte .textoPrimera {
+    font-size: 20px;
+    padding: 2rem;
+    max-width: 100%; }
+  #index .main .primeraParte .carousel {
+    width: 100%; }
+  #index .main .listaTorneos {
+    padding: 2rem 0 2rem 0; }
+    #index .main .listaTorneos ul {
+      max-width: 100%; }
+  #torneos .main .torneosRealizados .tituloTorneos {
+    padding: 1.5rem; }
+  #torneos .main .torneosRealizados .torneos {
+    max-width: 80%; }
+  #staff .main .parteIntegrantes .integrantes {
+    max-width: 65%; }
+  #nosotros .main .textoNosotros p {
+    padding: 2rem; }
+  #nosotros .main .partners .listaPartners {
+    padding: 0; }
+    #nosotros .main .partners .listaPartners li {
+      width: 75%; }
+      #nosotros .main .partners .listaPartners li a img {
+        width: 100%; }
+  #contacto .main .parteForm .form form textarea {
+    width: 75%; } }
 
 @media (max-width: 1200px) {
-    /* Main index */
-    /* Carousel */
-
-    .carousel {
-        width: 100%;
-    }
-
-    /* Footer */
-
-    .textoFooter {
-        flex-direction: column;
-        padding: 1.5rem;
-    }
-
-    .textoFooter ul {
-        justify-content: space-evenly;
-        width: 100%;
-    }
-
-    .textoCopy {
-        width: 100%;
-        margin-top: 1rem;
-    }
-}
+  #index .main .primeraParte .carousel {
+    width: 100%; }
+  .footer .textoFooter {
+    flex-direction: column;
+    padding: 1.5rem; }
+    .footer .textoFooter .listaFooter ul {
+      width: 100%;
+      justify-content: space-evenly; }
+    .footer .textoFooter .textoCopy {
+      width: 100%;
+      margin-top: 1rem; } }

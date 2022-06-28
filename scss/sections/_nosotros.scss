@@ -1,0 +1,52 @@
+#nosotros {
+    .main {
+        grid-area: main;
+
+        .textoNosotros {
+            text-align: center;
+            font-size: $tamañoFuente;
+
+            .tituloNosotros {
+                @include titulos($fondoNegro, $espacioTitulo);
+            }
+
+            .subtituloNosotros {
+                @include titulos($fondoAzul, 16px)
+            }
+
+            p {
+                padding: 2rem 25%;
+
+                .textoResaltado {
+                    font-weight: $negrita;
+                }
+            }
+        }
+
+        .partners {
+            .tituloPartners {
+                @extend %titulosPrincipales;
+            }
+
+            .listaPartners {
+                display: flex;
+                list-style: none;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+                li {
+                    &:hover {
+                        background-color: #182c50;
+                    }
+
+                    a {
+                        img {
+                            width: 400px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

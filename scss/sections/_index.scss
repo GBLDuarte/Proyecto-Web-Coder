@@ -1,0 +1,60 @@
+#index {
+    .main {
+        grid-area: main;
+
+        .primeraParte {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .textoPrimera {
+                max-width: 70%;
+                padding: 2rem;
+                text-align: center;
+                font-size: $tamañoFuente;
+
+                .tituloPrimera {
+                    padding-bottom: 1rem;
+                }
+
+                p {
+                    .textoResaltado {
+                        font-weight: $negrita;
+                    }
+                }
+            }
+
+            .carousel {
+                width: 85%;
+            }
+        }
+
+        .listaTorneos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: black;
+            padding: 3rem;
+            font-size: $tamañoFuente;
+
+            .tituloLista {
+                padding-bottom: 1rem;
+                text-align: center;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                max-width: 70%;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                li {
+                    padding: .5rem;
+                }
+            }
+
+        }
+    }
+}
