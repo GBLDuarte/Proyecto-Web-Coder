@@ -5,10 +5,7 @@
         // FORMULARIO
         .parteForm {
             .tituloForm {
-                padding: 1rem;
-                color: white;
-                background-image: $fondoNegro;
-                text-align: center;
+                @extend %titulosPrincipales;
             }
 
             .form {
@@ -49,10 +46,7 @@
         // UBICACION 
         .ubicacion {
             .tituloUbicacion {
-                background-image: $fondoNegro;
-                padding: 1rem;
-                color: white;
-                text-align: center;
+                @extend %titulosPrincipales;
             }
 
             iframe {
