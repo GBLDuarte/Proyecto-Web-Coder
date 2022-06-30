@@ -80,7 +80,7 @@
       #index .main .primeraParte .textoPrimera p .textoResaltado {
         font-weight: bold; }
     #index .main .primeraParte .carousel {
-      width: 85%; }
+      width: 100%; }
   #index .main .listaTorneos {
     display: flex;
     flex-direction: column;
@@ -209,8 +209,6 @@
     font-size: 20px;
     padding: 2rem;
     max-width: 100%; }
-  #index .main .primeraParte .carousel {
-    width: 100%; }
   #index .main .listaTorneos {
     padding: 2rem 0 2rem 0; }
     #index .main .listaTorneos ul {
@@ -250,8 +248,6 @@
     font-size: 20px;
     padding: 2rem;
     max-width: 100%; }
-  #index .main .primeraParte .carousel {
-    width: 100%; }
   #index .main .listaTorneos {
     padding: 2rem 0 2rem 0; }
     #index .main .listaTorneos ul {
@@ -292,8 +288,6 @@
     font-size: 20px;
     padding: 2rem;
     max-width: 100%; }
-  #index .main .primeraParte .carousel {
-    width: 100%; }
   #index .main .listaTorneos {
     padding: 2rem 0 2rem 0; }
     #index .main .listaTorneos ul {
@@ -316,8 +310,6 @@
     width: 75%; } }
 
 @media (max-width: 1200px) {
-  #index .main .primeraParte .carousel {
-    width: 100%; }
   .footer .textoFooter {
     flex-direction: column;
     padding: 1.5rem; }

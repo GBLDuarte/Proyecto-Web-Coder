@@ -47,10 +47,6 @@
                     padding: 2rem;
                     max-width: 100%;
                 }
-
-                .carousel {
-                    width: 100%;
-                }
             }
 
             .listaTorneos {
@@ -176,10 +172,6 @@
                     font-size: 20px;
                     padding: 2rem;
                     max-width: 100%;
-                }
-
-                .carousel {
-                    width: 100%;
                 }
             }
 
@@ -308,10 +300,6 @@
                     padding: 2rem;
                     max-width: 100%;
                 }
-
-                .carousel {
-                    width: 100%;
-                }
             }
 
             .listaTorneos {
@@ -390,16 +378,6 @@
 }
 
 @media (max-width: 1200px) {
-    #index {
-        .main {
-            .primeraParte {
-                .carousel {
-                    width: 100%;
-                }
-            }
-        }
-    }
-
     .footer {
         .textoFooter {
             flex-direction: column;
