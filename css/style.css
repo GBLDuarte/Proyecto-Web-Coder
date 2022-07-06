@@ -80,7 +80,7 @@
       #index .main .primeraParte .textoPrimera p .textoResaltado {
         font-weight: bold; }
     #index .main .primeraParte .carousel {
-      width: 100%; }
+      width: 80%; }
   #index .main .listaTorneos {
     display: flex;
     flex-direction: column;
@@ -114,7 +114,7 @@
       padding: 16px;
       color: white; }
     #nosotros .main .textoNosotros p {
-      padding: 2rem 25%; }
+      padding: 2rem 30%; }
       #nosotros .main .textoNosotros p .textoResaltado {
         font-weight: bold; }
   #nosotros .main .partners .listaPartners {
@@ -191,7 +191,7 @@
     display: block;
     width: 100%; }
 
-@media (max-width: 567px) {
+@media (max-width: 991px) {
   .grid {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "footer"; }
@@ -201,7 +201,8 @@
       flex-direction: column;
       padding: 1.5rem; }
       .grid .footer .textoFooter .listaFooter ul {
-        width: 100%; }
+        width: 100%;
+        justify-content: space-evenly; }
       .grid .footer .textoFooter .textoCopy {
         width: 100%;
         margin-top: 1rem; }
@@ -248,6 +249,8 @@
     font-size: 20px;
     padding: 2rem;
     max-width: 100%; }
+  #index .main .primeraParte .carousel {
+    width: 100%; }
   #index .main .listaTorneos {
     padding: 2rem 0 2rem 0; }
     #index .main .listaTorneos ul {
@@ -269,7 +272,7 @@
   #contacto .main .parteForm .form form textarea {
     width: 75%; } }
 
-@media (max-width: 991px) {
+@media (max-width: 567px) {
   .grid {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "footer"; }
@@ -279,8 +282,7 @@
       flex-direction: column;
       padding: 1.5rem; }
       .grid .footer .textoFooter .listaFooter ul {
-        width: 100%;
-        justify-content: space-evenly; }
+        width: 100%; }
       .grid .footer .textoFooter .textoCopy {
         width: 100%;
         margin-top: 1rem; }
@@ -308,14 +310,3 @@
         width: 100%; }
   #contacto .main .parteForm .form form textarea {
     width: 75%; } }
-
-@media (max-width: 1200px) {
-  .footer .textoFooter {
-    flex-direction: column;
-    padding: 1.5rem; }
-    .footer .textoFooter .listaFooter ul {
-      width: 100%;
-      justify-content: space-evenly; }
-    .footer .textoFooter .textoCopy {
-      width: 100%;
-      margin-top: 1rem; } }
