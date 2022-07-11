@@ -11,38 +11,14 @@
             }
 
             .integrantes {
-                margin: 2rem auto;
+                display: flex;
+                flex-direction: column;
 
-                ol {
-                    li {
-                        padding-bottom: 20px;
-                        list-style: none;
-
-                        .textoResaltado {
-                            font-weight: $negrita;
-                        }
-                    }
+                .filaStaff {
+                    display: flex;
+                    justify-content: space-around;
                 }
             }
         }
-
-        // ACORDION
-        .accordion {
-            border: solid 2px black;
-            border-radius: 5px;
-
-            .accordion-item {
-                background-color: rgb(192, 192, 192);
-
-                .accordion-header {
-                    .accordion-button {
-                        background-image: $fondoAzul;
-                        color: white;
-                    }
-                }
-            }
-        }
-
-
-    }
+}
 }

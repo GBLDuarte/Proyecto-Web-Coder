@@ -24,7 +24,11 @@
   background-image: linear-gradient(90deg, #061024 0%, #182c50 25%, #182c50 50%, #182c50 75%, #061024 100%); }
   .header .navbar .container-fluid .navbar-brand img {
     width: 150px;
-    padding: .5rem; }
+    padding: .5rem;
+    border-radius: 10px; }
+    .header .navbar .container-fluid .navbar-brand img:hover {
+      box-shadow: 7px 0px 12px 7px rgba(0, 0, 0, 0.301);
+      transition: .4s; }
   .header .navbar .container-fluid .navbar-toggler {
     background-color: #0b94d4; }
   .header .navbar .container-fluid .navbar-collapse {
@@ -150,20 +154,11 @@
     text-align: center;
     font-size: 18px; }
     #staff .main .parteIntegrantes .integrantes {
-      margin: 2rem auto; }
-      #staff .main .parteIntegrantes .integrantes ol li {
-        padding-bottom: 20px;
-        list-style: none; }
-        #staff .main .parteIntegrantes .integrantes ol li .textoResaltado {
-          font-weight: bold; }
-  #staff .main .accordion {
-    border: solid 2px black;
-    border-radius: 5px; }
-    #staff .main .accordion .accordion-item {
-      background-color: silver; }
-      #staff .main .accordion .accordion-item .accordion-header .accordion-button {
-        background-image: linear-gradient(90deg, #061024 0%, #182c50 25%, #182c50 50%, #182c50 75%, #061024 100%);
-        color: white; }
+      display: flex;
+      flex-direction: column; }
+      #staff .main .parteIntegrantes .integrantes .filaStaff {
+        display: flex;
+        justify-content: space-around; }
 
 #contacto .main {
   grid-area: main; }
@@ -218,8 +213,8 @@
     padding: 1.5rem; }
   #torneos .main .torneosRealizados .torneos {
     max-width: 80%; }
-  #staff .main .parteIntegrantes .integrantes {
-    max-width: 65%; }
+  #staff .main .parteIntegrantes .integrantes .filaStaff {
+    flex-wrap: wrap; }
   #nosotros .main .textoNosotros p {
     padding: 2rem; }
   #nosotros .main .partners .listaPartners {
@@ -259,8 +254,6 @@
     padding: 1.5rem; }
   #torneos .main .torneosRealizados .torneos {
     max-width: 80%; }
-  #staff .main .parteIntegrantes .integrantes {
-    max-width: 65%; }
   #nosotros .main .textoNosotros p {
     padding: 2rem; }
   #nosotros .main .partners .listaPartners {
@@ -298,8 +291,6 @@
     padding: 1.5rem; }
   #torneos .main .torneosRealizados .torneos {
     max-width: 80%; }
-  #staff .main .parteIntegrantes .integrantes {
-    max-width: 65%; }
   #nosotros .main .textoNosotros p {
     padding: 2rem; }
   #nosotros .main .partners .listaPartners {

@@ -78,7 +78,9 @@
         .main {
             .parteIntegrantes {
                 .integrantes {
-                    max-width: 65%;
+                    .filaStaff {
+                        flex-wrap: wrap;
+                    }
                 }
             }
         }
@@ -174,6 +176,7 @@
                     padding: 2rem;
                     max-width: 100%;
                 }
+
                 .carousel {
                     width: 100%;
                 }
@@ -198,16 +201,6 @@
 
                 .torneos {
                     max-width: 80%;
-                }
-            }
-        }
-    }
-
-    #staff {
-        .main {
-            .parteIntegrantes {
-                .integrantes {
-                    max-width: 65%;
                 }
             }
         }
@@ -303,7 +296,7 @@
                     padding: 2rem;
                     max-width: 100%;
                 }
-                
+
             }
 
             .listaTorneos {
@@ -325,16 +318,6 @@
 
                 .torneos {
                     max-width: 80%;
-                }
-            }
-        }
-    }
-
-    #staff {
-        .main {
-            .parteIntegrantes {
-                .integrantes {
-                    max-width: 65%;
                 }
             }
         }
@@ -380,7 +363,3 @@
         }
     }
 }
-
-
-
-
