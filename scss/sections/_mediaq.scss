@@ -117,6 +117,8 @@
             .parteForm {
                 .form {
                     form {
+                        width: auto;
+
                         textarea {
                             width: 75%;
                         }
@@ -198,6 +200,12 @@
                 .tituloTorneos {
                     padding: 1.5rem;
                 }
+
+                .torneos {
+                    .texto {
+                        box-shadow: 10px 5px 5px 0px #182c50;
+                    }
+                }
             }
         }
     }
@@ -233,6 +241,8 @@
             .parteForm {
                 .form {
                     form {
+                        width: auto;
+
                         textarea {
                             width: 75%;
                         }
@@ -312,23 +322,14 @@
                     padding: 1.5rem;
                 }
 
-                .torneoIzq {
+                .torneos {
                     margin: 2rem;
+                    width: 80%;
 
-                    .textoIzq {
-                        max-width: 100%;
-                    }
-                }
-
-                .torneoDer {
-                    margin: 2rem;
-
-                    .textoDer {
-                        max-width: 100%;
+                    .texto {
                         box-shadow: 10px 5px 5px 0px #182c50;
                     }
                 }
-
             }
         }
     }
@@ -364,6 +365,9 @@
             .parteForm {
                 .form {
                     form {
+                        width: auto;
+                        margin: 0 1rem 0 1rem;
+
                         textarea {
                             width: 75%;
                         }

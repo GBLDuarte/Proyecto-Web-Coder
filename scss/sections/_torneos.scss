@@ -14,57 +14,34 @@
             text-align: center;
             font-size: $tamañoFuente;
 
-            .torneoIzq {
-                margin: 2rem 0 2rem 10%;
+            .torneos {
+                margin: 2rem;
+                width: 55%;
+            }
 
-                .textoIzq {
-                    max-width: 40%;
-                    border: solid 2px black;
-                    border-radius: 5px;
-                    padding: 1rem;
+            .texto {
+                border: solid 2px black;
+                border-radius: 5px;
+                padding: 1rem;
+
+
+
+                &:hover {
                     box-shadow: 10px 5px 5px 0px #182c50;
+                    transition: .3s;
+                }
 
-                    .flexFila {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 1rem;
+                .flexFila {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
 
-                        img {
-                            width: 50px;
-                        }
+                    img {
+                        width: 50px;
                     }
                 }
             }
-
-            .torneoDer {
-                margin: 2rem 10% 2rem 0;
-                display: flex;
-                justify-content: flex-end;
-                
-
-                .textoDer {
-                    max-width: 40%;
-                    border: solid 2px black;
-                    border-radius: 5px;
-                    padding: 1rem;
-                    box-shadow: -10px -5px 5px 0px #182c50;
-
-                    .flexFila {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 1rem;
-
-                        img {
-                            width: 50px;
-                        }
-                    }
-                }
-            }
-
-
-
         }
     }
 }

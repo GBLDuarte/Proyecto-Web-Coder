@@ -146,38 +146,23 @@
     align-items: center;
     text-align: center;
     font-size: 18px; }
-    #torneos .main .torneosRealizados .torneoIzq {
-      margin: 2rem 0 2rem 10%; }
-      #torneos .main .torneosRealizados .torneoIzq .textoIzq {
-        max-width: 40%;
-        border: solid 2px black;
-        border-radius: 5px;
-        padding: 1rem;
-        box-shadow: 10px 5px 5px 0px #182c50; }
-        #torneos .main .torneosRealizados .torneoIzq .textoIzq .flexFila {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 1rem; }
-          #torneos .main .torneosRealizados .torneoIzq .textoIzq .flexFila img {
-            width: 50px; }
-    #torneos .main .torneosRealizados .torneoDer {
-      margin: 2rem 10% 2rem 0;
-      display: flex;
-      justify-content: flex-end; }
-      #torneos .main .torneosRealizados .torneoDer .textoDer {
-        max-width: 40%;
-        border: solid 2px black;
-        border-radius: 5px;
-        padding: 1rem;
-        box-shadow: -10px -5px 5px 0px #182c50; }
-        #torneos .main .torneosRealizados .torneoDer .textoDer .flexFila {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 1rem; }
-          #torneos .main .torneosRealizados .torneoDer .textoDer .flexFila img {
-            width: 50px; }
+    #torneos .main .torneosRealizados .torneos {
+      margin: 2rem;
+      width: 55%; }
+    #torneos .main .torneosRealizados .texto {
+      border: solid 2px black;
+      border-radius: 5px;
+      padding: 1rem; }
+      #torneos .main .torneosRealizados .texto:hover {
+        box-shadow: 10px 5px 5px 0px #182c50;
+        transition: .3s; }
+      #torneos .main .torneosRealizados .texto .flexFila {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem; }
+        #torneos .main .torneosRealizados .texto .flexFila img {
+          width: 50px; }
 
 #staff .main {
   grid-area: main; }
@@ -194,20 +179,31 @@
 #contacto .main {
   grid-area: main; }
   #contacto .main .parteForm .form {
-    padding: 1.5rem 0 1.5rem 0; }
+    padding: 1.5rem 0 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     #contacto .main .parteForm .form form {
+      width: 45%;
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      border-radius: 8px;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.164); }
       #contacto .main .parteForm .form form .textoResaltado {
         padding: 10px;
         font-weight: bold; }
       #contacto .main .parteForm .form form input {
         border-radius: 7px;
         text-align: center;
-        transition: .5s; }
+        border: none; }
         #contacto .main .parteForm .form form input:focus {
-          width: 20vw; }
+          border: solid 2px #0b94d4;
+          outline: 2px; }
+      #contacto .main .parteForm .form form input[type=file] {
+        width: auto;
+        border-radius: 0; }
       #contacto .main .parteForm .form form textarea {
         border-radius: 7px; }
       #contacto .main .parteForm .form form input[type=submit] {
@@ -254,8 +250,10 @@
       width: 75%; }
       #nosotros .main .partners .listaPartners li a img {
         width: 100%; }
-  #contacto .main .parteForm .form form textarea {
-    width: 75%; } }
+  #contacto .main .parteForm .form form {
+    width: auto; }
+    #contacto .main .parteForm .form form textarea {
+      width: 75%; } }
 
 @media (max-width: 768px) {
   .grid {
@@ -283,6 +281,8 @@
       max-width: 100%; }
   #torneos .main .torneosRealizados .tituloTorneos {
     padding: 1.5rem; }
+  #torneos .main .torneosRealizados .torneos .texto {
+    box-shadow: 10px 5px 5px 0px #182c50; }
   #nosotros .main .textoNosotros p {
     padding: 2rem; }
   #nosotros .main .partners .listaPartners {
@@ -291,8 +291,10 @@
       width: 75%; }
       #nosotros .main .partners .listaPartners li a img {
         width: 100%; }
-  #contacto .main .parteForm .form form textarea {
-    width: 75%; } }
+  #contacto .main .parteForm .form form {
+    width: auto; }
+    #contacto .main .parteForm .form form textarea {
+      width: 75%; } }
 
 @media (max-width: 567px) {
   .grid {
@@ -318,14 +320,10 @@
       max-width: 100%; }
   #torneos .main .torneosRealizados .tituloTorneos {
     padding: 1.5rem; }
-  #torneos .main .torneosRealizados .torneoIzq {
-    margin: 2rem; }
-    #torneos .main .torneosRealizados .torneoIzq .textoIzq {
-      max-width: 100%; }
-  #torneos .main .torneosRealizados .torneoDer {
-    margin: 2rem; }
-    #torneos .main .torneosRealizados .torneoDer .textoDer {
-      max-width: 100%;
+  #torneos .main .torneosRealizados .torneos {
+    margin: 2rem;
+    width: 80%; }
+    #torneos .main .torneosRealizados .torneos .texto {
       box-shadow: 10px 5px 5px 0px #182c50; }
   #nosotros .main .textoNosotros p {
     padding: 2rem; }
@@ -335,5 +333,8 @@
       width: 75%; }
       #nosotros .main .partners .listaPartners li a img {
         width: 100%; }
-  #contacto .main .parteForm .form form textarea {
-    width: 75%; } }
+  #contacto .main .parteForm .form form {
+    width: auto;
+    margin: 0 1rem 0 1rem; }
+    #contacto .main .parteForm .form form textarea {
+      width: 75%; } }
