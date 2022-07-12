@@ -13,11 +13,15 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "header header header header" "main main main main" "main main main main" "footer footer footer footer"; }
 
-#nosotros .main .partners .tituloPartners, #torneos .main .torneosRealizados .tituloTorneos, #staff .main .parteIntegrantes .tituloIntegrantes, #contacto .main .parteForm .tituloForm, #contacto .main .ubicacion .tituloUbicacion {
+#nosotros .main .partners .tituloPartners, #torneos .main .tituloTorneos, #staff .main .parteIntegrantes .tituloIntegrantes, #contacto .main .parteForm .tituloForm, #contacto .main .ubicacion .tituloUbicacion {
   background-image: linear-gradient(90deg, black 0%, #282828 50%, black 100%);
   padding: 1rem;
   color: white;
   text-align: center; }
+
+#staff .main .parteIntegrantes .integrantes .filaCeo img:hover, #staff .main .parteIntegrantes .integrantes .filaStaff img:hover {
+  transform: scale(1.1);
+  transition: .6s; }
 
 .header {
   grid-area: header;
@@ -134,19 +138,46 @@
 
 #torneos .main {
   grid-area: main; }
+  #torneos .main .tituloTorneos {
+    width: 100%; }
   #torneos .main .torneosRealizados {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     font-size: 18px; }
-    #torneos .main .torneosRealizados .tituloTorneos {
-      width: 100%; }
-    #torneos .main .torneosRealizados .torneos {
-      max-width: 50%;
-      margin: 2.5rem auto; }
-      #torneos .main .torneosRealizados .torneos h3 {
-        margin-bottom: 10px; }
+    #torneos .main .torneosRealizados .torneoIzq {
+      margin: 2rem 0 2rem 10%; }
+      #torneos .main .torneosRealizados .torneoIzq .textoIzq {
+        max-width: 40%;
+        border: solid 2px black;
+        border-radius: 5px;
+        padding: 1rem;
+        box-shadow: 10px 5px 5px 0px #182c50; }
+        #torneos .main .torneosRealizados .torneoIzq .textoIzq .flexFila {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem; }
+          #torneos .main .torneosRealizados .torneoIzq .textoIzq .flexFila img {
+            width: 50px; }
+    #torneos .main .torneosRealizados .torneoDer {
+      margin: 2rem 10% 2rem 0;
+      display: flex;
+      justify-content: flex-end; }
+      #torneos .main .torneosRealizados .torneoDer .textoDer {
+        max-width: 40%;
+        border: solid 2px black;
+        border-radius: 5px;
+        padding: 1rem;
+        box-shadow: -10px -5px 5px 0px #182c50; }
+        #torneos .main .torneosRealizados .torneoDer .textoDer .flexFila {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem; }
+          #torneos .main .torneosRealizados .torneoDer .textoDer .flexFila img {
+            width: 50px; }
 
 #staff .main {
   grid-area: main; }
@@ -252,8 +283,6 @@
       max-width: 100%; }
   #torneos .main .torneosRealizados .tituloTorneos {
     padding: 1.5rem; }
-  #torneos .main .torneosRealizados .torneos {
-    max-width: 80%; }
   #nosotros .main .textoNosotros p {
     padding: 2rem; }
   #nosotros .main .partners .listaPartners {
@@ -289,8 +318,15 @@
       max-width: 100%; }
   #torneos .main .torneosRealizados .tituloTorneos {
     padding: 1.5rem; }
-  #torneos .main .torneosRealizados .torneos {
-    max-width: 80%; }
+  #torneos .main .torneosRealizados .torneoIzq {
+    margin: 2rem; }
+    #torneos .main .torneosRealizados .torneoIzq .textoIzq {
+      max-width: 100%; }
+  #torneos .main .torneosRealizados .torneoDer {
+    margin: 2rem; }
+    #torneos .main .torneosRealizados .torneoDer .textoDer {
+      max-width: 100%;
+      box-shadow: 10px 5px 5px 0px #182c50; }
   #nosotros .main .textoNosotros p {
     padding: 2rem; }
   #nosotros .main .partners .listaPartners {

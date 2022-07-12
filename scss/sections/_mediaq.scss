@@ -198,10 +198,6 @@
                 .tituloTorneos {
                     padding: 1.5rem;
                 }
-
-                .torneos {
-                    max-width: 80%;
-                }
             }
         }
     }
@@ -316,9 +312,23 @@
                     padding: 1.5rem;
                 }
 
-                .torneos {
-                    max-width: 80%;
+                .torneoIzq {
+                    margin: 2rem;
+
+                    .textoIzq {
+                        max-width: 100%;
+                    }
                 }
+
+                .torneoDer {
+                    margin: 2rem;
+
+                    .textoDer {
+                        max-width: 100%;
+                        box-shadow: 10px 5px 5px 0px #182c50;
+                    }
+                }
+
             }
         }
     }

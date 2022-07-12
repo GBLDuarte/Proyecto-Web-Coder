@@ -2,6 +2,11 @@
     .main {
         grid-area: main;
 
+        .tituloTorneos {
+            @extend %titulosPrincipales;
+            width: 100%;
+        }
+
         .torneosRealizados {
             display: flex;
             flex-direction: column;
@@ -9,19 +14,57 @@
             text-align: center;
             font-size: $tamañoFuente;
 
-            .tituloTorneos {
-                @extend %titulosPrincipales;
-                width: 100%;
-            }
+            .torneoIzq {
+                margin: 2rem 0 2rem 10%;
 
-            .torneos {
-                max-width: 50%;
-                margin: 2.5rem auto;
+                .textoIzq {
+                    max-width: 40%;
+                    border: solid 2px black;
+                    border-radius: 5px;
+                    padding: 1rem;
+                    box-shadow: 10px 5px 5px 0px #182c50;
 
-                h3 {
-                    margin-bottom: 10px;
+                    .flexFila {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 1rem;
+
+                        img {
+                            width: 50px;
+                        }
+                    }
                 }
             }
+
+            .torneoDer {
+                margin: 2rem 10% 2rem 0;
+                display: flex;
+                justify-content: flex-end;
+                
+
+                .textoDer {
+                    max-width: 40%;
+                    border: solid 2px black;
+                    border-radius: 5px;
+                    padding: 1rem;
+                    box-shadow: -10px -5px 5px 0px #182c50;
+
+                    .flexFila {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 1rem;
+
+                        img {
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+
+
+
         }
     }
 }

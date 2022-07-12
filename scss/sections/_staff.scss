@@ -14,11 +14,25 @@
                 display: flex;
                 flex-direction: column;
 
+                .filaCeo {
+                    img {
+                        &:hover {
+                            @extend %efectoImagen;
+                        }
+                    }
+                }
+
                 .filaStaff {
                     display: flex;
                     justify-content: space-around;
+
+                    img {
+                        &:hover {
+                            @extend %efectoImagen;
+                        }
+                    }
                 }
             }
         }
-}
+    }
 }

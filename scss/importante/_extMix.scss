@@ -6,6 +6,11 @@
     text-align: center;
 }
 
+%efectoImagen {
+    transform: scale(1.1);
+    transition: .6s;
+}
+
 // Mixin
 @mixin titulos($fondoNegro, $espacioTitulo) {
     background-image: $fondoNegro;
