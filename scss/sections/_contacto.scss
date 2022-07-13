@@ -27,12 +27,12 @@
                         padding: 10px;
                         font-weight: $negrita;
                     }
-                    
+
                     input {
                         border-radius: 7px;
                         text-align: center;
                         border: none;
-                        
+
                         &:focus {
                             border: solid 2px #0b94d4;
                             outline: 2px;
@@ -46,6 +46,11 @@
 
                     textarea {
                         border-radius: 7px;
+
+                        &:focus {
+                            border: solid 2px #0b94d4;
+                            outline: 2px;
+                        }
                     }
 
                     input[type=submit] {

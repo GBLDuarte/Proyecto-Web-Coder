@@ -32,8 +32,7 @@
                             font-size: 20px;
 
                             &:hover {
-                                transition: .5s;
-                                transform: scale(1.5);
+                                text-decoration: underline;
                                 color: #0b94d4;
                             }
                         }

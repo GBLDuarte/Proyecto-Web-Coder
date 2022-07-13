@@ -43,8 +43,7 @@
         color: white;
         font-size: 20px; }
         .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-          transition: .5s;
-          transform: scale(1.5);
+          text-decoration: underline;
           color: #0b94d4; }
 
 .footer {
@@ -206,6 +205,9 @@
         border-radius: 0; }
       #contacto .main .parteForm .form form textarea {
         border-radius: 7px; }
+        #contacto .main .parteForm .form form textarea:focus {
+          border: solid 2px #0b94d4;
+          outline: 2px; }
       #contacto .main .parteForm .form form input[type=submit] {
         margin-top: 1rem;
         width: 150px; }
